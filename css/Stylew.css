@@ -4,9 +4,18 @@
 }
 
 body {
-    background-image: linear-gradient(140deg, rgba(234, 130, 92, 0.877) 10%, rgba(255, 187, 162, 0.877) 40%, rgba(234, 130, 92, 0.877) 75%);
+    background-color: rgba(255, 224, 213, 0.877);
     min-height: 100vh;
 
+}
+
+p {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    padding: 10px 50px;
+    margin-top: 20px;
+    font-size: xx-large;
 }
 
 #name {
@@ -42,7 +51,7 @@ body {
     transform: scale(1.2);
 }
 
-/* @media (max-width: 320px) {
+@media (max-width: 320px) {
     #welcome {
         display: flex;
         justify-content: center;
@@ -65,4 +74,4 @@ body {
     .Stylebtn {
         margin-top: 50px;
     }
-} */
+}

@@ -1,4 +1,3 @@
-
 function user(name, email, password, result, answers) {
   this.name = name;
   this.email = email;
@@ -115,8 +114,8 @@ const signup = (e) => {
   if (op) {
 
 
-    var input = document.getElementsByClassName('in')
-    var n = formdata.fname + formdata.lname;
+
+    var n = formdata.fname + "  " + formdata.lname;
     var a = []
     var x = new user(n, formdata.email, formdata.pwd, 0, a)
 
@@ -150,7 +149,6 @@ if (check1.test(formdata.pwd) == true) {
   document.getElementById("3").style.color = "red";
   document.getElementById("3").innerHTML = "must begin with capital letter";
 }
-
 var check2 = /[0-9]/g;
 if (check2.test(formdata.pwd) == true) {
   document.getElementById("3").style.color = "green";
@@ -159,7 +157,6 @@ if (check2.test(formdata.pwd) == true) {
   document.getElementById("3").style.color = "red";
   document.getElementById("3").innerHTML = "one number at least";
 }
-
 var check3 = /[?=.*[\]\\{}!@#$%^&*]/;
 if (check3.test(formdata.pwd) == true) {
   document.getElementById("3").style.color = "green";
@@ -168,7 +165,6 @@ if (check3.test(formdata.pwd) == true) {
   document.getElementById("3").style.color = "red";
   document.getElementById("3").innerHTML = "add one symbol at least";
 }
-
 var check4 = formdata.pwd.length < 8;
 if (check4.test(formdata.pwd) == false) {
   document.getElementById("3").style.color = "green";
@@ -178,4 +174,3 @@ if (check4.test(formdata.pwd) == false) {
   document.getElementById("3").style.color = "red";
   document.getElementById("3").innerHTML = "at least 8 characters";
 }*/
-
